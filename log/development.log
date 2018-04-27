@@ -314,3 +314,794 @@ Processing by Users::RegistrationsController#new as HTML
 Completed 200 OK in 155ms (Views: 153.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.20.0.1 at 2018-04-27 18:29:58 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (31.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (11.9ms)
+Completed 200 OK in 90ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 18:30:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (6.5ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 18:30:10 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (222.1ms)
+Completed 200 OK in 1555ms (Views: 1283.3ms | ActiveRecord: 195.5ms)
+
+
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-04-27 18:30:15 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 198ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 18:30:18 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 224ms (Views: 222.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3381382351104636165);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (57.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddOmniauthToUsers (20180427185551)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.9ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" character varying[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" character varying[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180427185551"]]
+  [1m[35m (103.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (23.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3381382351104636165)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 172.20.0.1 at 2018-04-27 18:58:03 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (12.5ms)
+Completed 200 OK in 92ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 18:58:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (188.9ms)
+Completed 200 OK in 1457ms (Views: 1363.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 18:58:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 18:58:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=0ff4f45e3f6a9b52b17e&state=9d85f1d7e13e639e1531f1ed78acbbcd1f03898d183eb140" for 172.20.0.1 at 2018-04-27 18:58:24 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"0ff4f45e3f6a9b52b17e", "state"=>"9d85f1d7e13e639e1531f1ed78acbbcd1f03898d183eb140"}
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (17.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$0TicdXfMTXw22uzNgRqwtetF1ehLndOpahn1rJH6/1jx485kk8p02"], ["created_at", "2018-04-27 18:58:26.769149"], ["updated_at", "2018-04-27 18:58:26.769149"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 362ms (ActiveRecord: 44.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (1, sergioh.c@live.com, $2a$11$0TicdXfMTXw22uzNgRqwtetF1ehLndOpahn1rJH6/1jx485kk8p02, null, null, null, null, 0, null, null, null, null, 2018-04-27 18:58:26.769149, 2018-04-27 18:58:26.769149, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.6ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+Started GET "/users/auth/github/callback?code=0ff4f45e3f6a9b52b17e&state=9d85f1d7e13e639e1531f1ed78acbbcd1f03898d183eb140" for 172.20.0.1 at 2018-04-27 19:01:02 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"0ff4f45e3f6a9b52b17e", "state"=>"9d85f1d7e13e639e1531f1ed78acbbcd1f03898d183eb140"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:01:03 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 225ms (Views: 185.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:01:05 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:01:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=456910e7896f0ba5a98e&state=ebf3d3f2c91dfd85ad37146804c76cba388278d02bfb49b1" for 172.20.0.1 at 2018-04-27 19:01:06 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"456910e7896f0ba5a98e", "state"=>"ebf3d3f2c91dfd85ad37146804c76cba388278d02bfb49b1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$vySec7WlYQby06RHTjgo/.3bqaZ0srEL9HbZJYVjthHQ5nYrCIWai"], ["created_at", "2018-04-27 19:01:08.786176"], ["updated_at", "2018-04-27 19:01:08.786176"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 5.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (2, sergioh.c@live.com, $2a$11$vySec7WlYQby06RHTjgo/.3bqaZ0srEL9HbZJYVjthHQ5nYrCIWai, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:01:08.786176, 2018-04-27 19:01:08.786176, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-04-27 19:02:26 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 192ms (Views: 160.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:02:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:02:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=112b1bbe5882f670e831&state=a218791f5447cc02d8cfb9787e0716d16e01012aceae67d6" for 172.20.0.1 at 2018-04-27 19:02:31 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:02:33 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:02:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"112b1bbe5882f670e831", "state"=>"a218791f5447cc02d8cfb9787e0716d16e01012aceae67d6"}
+Started GET "/users/auth/github/callback?code=5c75df31e2ca0ea1f743&state=af249a6ece78b322a33061d705c7b739adc01da99d087036" for 172.20.0.1 at 2018-04-27 19:02:35 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (6.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$7BULUtQGi1HZ8vVzWtCdXOKtF9TsdFSiT/jcD4ftp5kuOSmnhdIE6"], ["created_at", "2018-04-27 19:02:35.459293"], ["updated_at", "2018-04-27 19:02:35.459293"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 11.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (3, sergioh.c@live.com, $2a$11$7BULUtQGi1HZ8vVzWtCdXOKtF9TsdFSiT/jcD4ftp5kuOSmnhdIE6, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:02:35.459293, 2018-04-27 19:02:35.459293, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.3ms)
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"5c75df31e2ca0ea1f743", "state"=>"af249a6ece78b322a33061d705c7b739adc01da99d087036"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$fd/SVFx0mqXu7uPcQJ9wG.LGGADX3yy4wIZV3tPmjXn8FqnabAQw6"], ["created_at", "2018-04-27 19:02:42.473614"], ["updated_at", "2018-04-27 19:02:42.473614"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 5.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (4, sergioh.c@live.com, $2a$11$fd/SVFx0mqXu7uPcQJ9wG.LGGADX3yy4wIZV3tPmjXn8FqnabAQw6, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:02:42.473614, 2018-04-27 19:02:42.473614, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.5ms)
+Started GET "/users/auth/github/callback?code=5c75df31e2ca0ea1f743&state=af249a6ece78b322a33061d705c7b739adc01da99d087036" for 172.20.0.1 at 2018-04-27 19:03:52 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"5c75df31e2ca0ea1f743", "state"=>"af249a6ece78b322a33061d705c7b739adc01da99d087036"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:03:53 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 168ms (Views: 166.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:03:55 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:03:56 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=d691432bb9afad57f67d&state=bcb8dad382c6680d403cb04087360c48298eec535f737bce" for 172.20.0.1 at 2018-04-27 19:03:56 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"d691432bb9afad57f67d", "state"=>"bcb8dad382c6680d403cb04087360c48298eec535f737bce"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$xq9ZS.JExyxt2yn0/OfUq.r6k0t733jPKGNbHOyT.YZFuhXTVJe8e"], ["created_at", "2018-04-27 19:03:59.115823"], ["updated_at", "2018-04-27 19:03:59.115823"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 4.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (5, sergioh.c@live.com, $2a$11$xq9ZS.JExyxt2yn0/OfUq.r6k0t733jPKGNbHOyT.YZFuhXTVJe8e, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:03:59.115823, 2018-04-27 19:03:59.115823, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.7ms)
+Started GET "/users/auth/github/callback?code=d691432bb9afad57f67d&state=bcb8dad382c6680d403cb04087360c48298eec535f737bce" for 172.20.0.1 at 2018-04-27 19:04:28 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"d691432bb9afad57f67d", "state"=>"bcb8dad382c6680d403cb04087360c48298eec535f737bce"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:04:28 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 155ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:04:31 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:04:31 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=4c75250c0cd7c16c7f2b&state=c70d2d480fbf1f0cb10f00694a159f909837f5b4583a999e" for 172.20.0.1 at 2018-04-27 19:04:32 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"4c75250c0cd7c16c7f2b", "state"=>"c70d2d480fbf1f0cb10f00694a159f909837f5b4583a999e"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (5.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$5un5u3D2F6HO1PvgAxmvg.VPL2se6b3R8Ez/9PIIBjOjFLoiumlP."], ["created_at", "2018-04-27 19:04:34.945070"], ["updated_at", "2018-04-27 19:04:34.945070"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 8.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (6, sergioh.c@live.com, $2a$11$5un5u3D2F6HO1PvgAxmvg.VPL2se6b3R8Ez/9PIIBjOjFLoiumlP., null, null, null, null, 0, null, null, null, null, 2018-04-27 19:04:34.94507, 2018-04-27 19:04:34.94507, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.3ms)
+Started GET "/users/auth/github/callback?code=4c75250c0cd7c16c7f2b&state=c70d2d480fbf1f0cb10f00694a159f909837f5b4583a999e" for 172.20.0.1 at 2018-04-27 19:05:37 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"4c75250c0cd7c16c7f2b", "state"=>"c70d2d480fbf1f0cb10f00694a159f909837f5b4583a999e"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:05:38 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 178ms (Views: 144.9ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:05:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:05:41 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=7c44dbd48f7f60b88341&state=6367bed1effab69a4521cf8fdf22fcda2515d03de604e868" for 172.20.0.1 at 2018-04-27 19:05:41 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"7c44dbd48f7f60b88341", "state"=>"6367bed1effab69a4521cf8fdf22fcda2515d03de604e868"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$PJhZp7PrbfcgAz4k6cMw1uAXaalNBdYgtX1DJtGZe5sht3bBTbM.."], ["created_at", "2018-04-27 19:05:43.699314"], ["updated_at", "2018-04-27 19:05:43.699314"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 4.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (7, sergioh.c@live.com, $2a$11$PJhZp7PrbfcgAz4k6cMw1uAXaalNBdYgtX1DJtGZe5sht3bBTbM.., null, null, null, null, 0, null, null, null, null, 2018-04-27 19:05:43.699314, 2018-04-27 19:05:43.699314, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.0ms)
+Started POST "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:06:18 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zcHpRiU2xdx7QwLafDyfDrjeJbRhJ5mkKCK2uMPfxXRDMonOic36g5lpzS28ahQdWmoN80zP7hcCvZ0BOflohQ==", "user"=>{"email"=>"sergioh.c@live.com", "password"=>"[FILTERED]", "remember_me"=>"1"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zcHpRiU2xdx7QwLafDyfDrjeJbRhJ5mkKCK2uMPfxXRDMonOic36g5lpzS28ahQdWmoN80zP7hcCvZ0BOflohQ==", "user"=>{"email"=>"sergioh.c@live.com", "password"=>"[FILTERED]", "remember_me"=>"1"}}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 309ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:06:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:06:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=9f88bf84d2f3efcc0c55&state=962f34789d494af6f4aec8b7257e094d6b6b26abf1f37809" for 172.20.0.1 at 2018-04-27 19:06:24 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"9f88bf84d2f3efcc0c55", "state"=>"962f34789d494af6f4aec8b7257e094d6b6b26abf1f37809"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$/p3nF9TR.CKa/9yvYPe6nehsWrsyYw5ldp4AsZT5r/REITL6yESE6"], ["created_at", "2018-04-27 19:06:26.212342"], ["updated_at", "2018-04-27 19:06:26.212342"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 4.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (8, sergioh.c@live.com, $2a$11$/p3nF9TR.CKa/9yvYPe6nehsWrsyYw5ldp4AsZT5r/REITL6yESE6, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:06:26.212342, 2018-04-27 19:06:26.212342, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.6ms)
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:08:16 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 35ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:08:22 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 143ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:08:25 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:08:25 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=0149e564711fc6dceb46&state=6672ab8e3d276345a6f5f113c06235b33ab9e369711d0ce4" for 172.20.0.1 at 2018-04-27 19:08:25 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"0149e564711fc6dceb46", "state"=>"6672ab8e3d276345a6f5f113c06235b33ab9e369711d0ce4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$Xv/a7v7fr5sWOYSS8zqXuedN8KH7olIq6QvtSRqkLlgQBYvCxUPRW"], ["created_at", "2018-04-27 19:08:28.200900"], ["updated_at", "2018-04-27 19:08:28.200900"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (7.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 10.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (9, sergioh.c@live.com, $2a$11$Xv/a7v7fr5sWOYSS8zqXuedN8KH7olIq6QvtSRqkLlgQBYvCxUPRW, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:08:28.2009, 2018-04-27 19:08:28.2009, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.0ms)
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:12:54 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:13:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 416ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:13:33 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:13:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=032a3d5ae6cf4a752f8d&state=b9f72cb9be37c5a03160cb2216e4e8ed48ceed8ac8e84fb3" for 172.20.0.1 at 2018-04-27 19:13:41 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"032a3d5ae6cf4a752f8d", "state"=>"b9f72cb9be37c5a03160cb2216e4e8ed48ceed8ac8e84fb3"}
+  [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$DS.Yz4w8EZDcGCGDBImW2.xwOrfmAolbQ0dZb/kYDBbWb6JFXRosm"], ["created_at", "2018-04-27 19:13:43.593463"], ["updated_at", "2018-04-27 19:13:43.593463"], ["provider", "github"], ["uid", "11342308"]]
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 17.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERROR:  null value in column "name" violates not-null constraint
+DETAIL:  Failing row contains (10, sergioh.c@live.com, $2a$11$DS.Yz4w8EZDcGCGDBImW2.xwOrfmAolbQ0dZb/kYDBbWb6JFXRosm, null, null, null, null, 0, null, null, null, null, 2018-04-27 19:13:43.593463, 2018-04-27 19:13:43.593463, github, 11342308).
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/users/omniauth_callbacks_controller.rb:5:in `github'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-04-27 19:14:03 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 142ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.20.0.1 at 2018-04-27 19:14:15 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IsMRmLklY0tcOnOT/Xo7NOMecFLJyKGxl4k3JVtQJj6VfJriNFBor6FPjVJ8//SnFPl2u4m+/k8SswE+o3hYUg==", "user"=>{"name"=>"Sergio Henrique", "email"=>"sergioh.c@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "sergioh.c@live.com"], ["encrypted_password", "$2a$11$xdIMnsKC0WodlN20FmrNO.NLrb0wR4iMSoqQDNqwAgG1VgF4j4OW."], ["name", "Sergio Henrique"], ["created_at", "2018-04-27 19:14:16.037530"], ["updated_at", "2018-04-27 19:14:16.037530"]]
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-04-27 19:14:16.089418"], ["last_sign_in_at", "2018-04-27 19:14:16.089418"], ["current_sign_in_ip", "172.20.0.1/32"], ["last_sign_in_ip", "172.20.0.1/32"], ["updated_at", "2018-04-27 19:14:16.091106"], ["id", 11]]
+  [1m[35m (27.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 412ms (ActiveRecord: 74.9ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:14:16 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:14:41 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:14:41 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:14:50 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:14:50 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-04-27 19:15:01 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:15:01 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:16:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (32.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 280ms (ActiveRecord: 76.1ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:16:19 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (9.8ms)
+Completed 200 OK in 83ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-04-27 19:16:24 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:16:24 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (18.8ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-04-27 19:16:28 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 172.20.0.1 at 2018-04-27 19:16:36 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (193.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (69.1ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (370.9ms)
+Started GET "/users/sign_out" for 172.20.0.1 at 2018-04-27 19:16:46 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (8.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.4ms)
+Started GET "/users/sign_out" for 172.20.0.1 at 2018-04-27 19:16:51 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (10.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.1ms)
+Started GET "/" for 172.20.0.1 at 2018-04-27 19:17:13 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /box/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-04-27 19:17:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=4f5480681bc2e9ad2258&state=623cd6630702136e4092a17b2ea959b03e8e325cfb975fa9" for 172.20.0.1 at 2018-04-27 19:17:18 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"4f5480681bc2e9ad2258", "state"=>"623cd6630702136e4092a17b2ea959b03e8e325cfb975fa9"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 300ms (ActiveRecord: 3.4ms)
+
+

@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'inky-rb', require: 'inky'
 gem 'premailer-rails'
-
+gem 'omniauth-github'
 gem 'devise'
 gem 'materialize-sass'
 gem 'material_icons'
