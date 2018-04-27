@@ -31,9 +31,6 @@ services:
     image: busybox
     volumes:
       - /box
-
-
-
 volumes:
   redis:
   postgres:
