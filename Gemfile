@@ -42,6 +42,7 @@ gem 'devise'
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'redis'
+gem 'graphql', '~> 1.7.14'
 
 group :test do
   gem "factory_bot_rails"
@@ -62,3 +63,4 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+gem 'graphiql-rails', group: :development
