@@ -1,1 +1,4 @@
-tmp/
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
