@@ -81,6 +81,9 @@ GEM
       railties
       sprockets-rails
     graphql (1.7.14)
+    graphql-client (0.12.3)
+      activesupport (>= 3.0, < 6.0)
+      graphql (~> 1.6)
     hashie (3.5.7)
     htmlentities (4.3.4)
     i18n (1.0.1)
@@ -250,6 +253,7 @@ DEPENDENCIES
   ffaker
   graphiql-rails
   graphql (~> 1.7.14)
+  graphql-client
   inky-rb
   jbuilder (~> 2.5)
   jquery-rails
