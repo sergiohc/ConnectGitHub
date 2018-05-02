@@ -1,3 +1,5 @@
+require_relative "boot"
+
 require "rails"
 require "action_controller/railtie"
 require "action_view/railtie"
@@ -23,7 +25,7 @@ module ConnectGitHub
       }
     end
   end
-
+  
   Client = GraphQL::Client.new(
     schema: Application.root.join("db/schema.json").to_s,
     execute: HTTPAdapter
