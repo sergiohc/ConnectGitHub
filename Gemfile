@@ -45,6 +45,7 @@ gem 'redis'
 gem 'graphql', '~> 1.7.14'
 gem 'graphql-client'
 
+
 group :test do
   gem "factory_bot_rails"
   gem "ffaker"

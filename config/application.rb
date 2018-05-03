@@ -1,34 +1,41 @@
 require_relative "boot"
 
 require "rails"
-require "action_controller/railtie"
-require "action_view/railtie"
-require "graphql/client/railtie"
+require "graphql/client"
 require "graphql/client/http"
+require "active_record/railtie"
+require "action_cable/engine"
 
 Bundler.require(*Rails.groups)
 
-module ConnectGitHub
+# Star Wars API example wrapper
+module SWAPI
   class Application < Rails::Application
   end
-
-  HTTPAdapter = GraphQL::Client::HTTP.new("https://api.github.com/graphql") do
+  # Configure GraphQL endpoint using the basic HTTP network adapter.
+  HTTP = GraphQL::Client::HTTP.new("https://api.github.com/graphql") do
     def headers(context)
       unless token = context[:access_token] || Application.secrets.github_access_token
-        # $ GITHUB_ACCESS_TOKEN=abc123 bin/rails server
-        #   https://help.github.com/articles/creating-an-access-token-for-command-line-use
-        fail "Missing GitHub access token"
-      end
-
-      {
-        "Authorization" => "Bearer #{token}"
-      }
+      # Optionally set
+       any HTTP headers
+      fail "Missing GitHub access token"
     end
-  end
-  
-  Client = GraphQL::Client.new(
-    schema: Application.root.join("db/schema.json").to_s,
-    execute: HTTPAdapter
-  )
-  Application.config.graphql.client = Client
+
+    {
+      "Authorization" => "Bearer #{token}"
+    }
+    end
+  end  
+
+  # Fetch latest schema on init, this will make a network request
+  Schema = GraphQL::Client.load_schema(HTTP)
+
+  # However, it's smart to dump this to a JSON file and load from disk
+  #
+  # Run it from a script or rake task
+  #   GraphQL::Client.dump_schema(SWAPI::HTTP, "path/to/schema.json")
+  #
+  # Schema = GraphQL::Client.load_schema("path/to/schema.json")
+
+  Client = GraphQL::Client.new(schema: Schema, execute: HTTP)
 end

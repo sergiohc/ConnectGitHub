@@ -1985,3 +1985,336 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:54:36 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (32.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (10.5ms)
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:54:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:54:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 2713ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 9356ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 6041ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'action_cable' with type 'application/javascript'
+Checked in these paths: 
+  /ConnectGitHub/app/assets/config
+  /ConnectGitHub/app/assets/images
+  /ConnectGitHub/app/assets/javascripts
+  /ConnectGitHub/app/assets/stylesheets
+  /ConnectGitHub/vendor/assets/javascripts
+  /ConnectGitHub/vendor/assets/stylesheets
+  /box/gems/graphiql-rails-1.4.10/app/assets/javascripts
+  /box/gems/graphiql-rails-1.4.10/app/assets/stylesheets
+  /box/gems/material_icons-2.2.1/app/assets/fonts
+  /box/gems/material_icons-2.2.1/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/foundation_emails-2.2.1.0/vendor/assets/stylesheets
+  /box/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /box/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /box/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/images):
+    4:     <title>Inteliware</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= favicon_link_tag %>
+   10:   </head>
+  
+app/assets/javascripts/cable.js:4
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2382190314601243493_70306154331140'
+  
+ActionView::Template::Error (couldn't find file 'action_cable' with type 'application/javascript'
+Checked in these paths: 
+  /ConnectGitHub/app/assets/config
+  /ConnectGitHub/app/assets/images
+  /ConnectGitHub/app/assets/javascripts
+  /ConnectGitHub/app/assets/stylesheets
+  /ConnectGitHub/vendor/assets/javascripts
+  /ConnectGitHub/vendor/assets/stylesheets
+  /box/gems/graphiql-rails-1.4.10/app/assets/javascripts
+  /box/gems/graphiql-rails-1.4.10/app/assets/stylesheets
+  /box/gems/material_icons-2.2.1/app/assets/fonts
+  /box/gems/material_icons-2.2.1/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/foundation_emails-2.2.1.0/vendor/assets/stylesheets
+  /box/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /box/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /box/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/images):
+    4:     <title>Inteliware</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= favicon_link_tag %>
+   10:   </head>
+  
+app/assets/javascripts/cable.js:4
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2382190314601243493_61724760'
+  
+ActionView::Template::Error (couldn't find file 'action_cable' with type 'application/javascript'
+Checked in these paths: 
+  /ConnectGitHub/app/assets/config
+  /ConnectGitHub/app/assets/images
+  /ConnectGitHub/app/assets/javascripts
+  /ConnectGitHub/app/assets/stylesheets
+  /ConnectGitHub/vendor/assets/javascripts
+  /ConnectGitHub/vendor/assets/stylesheets
+  /box/gems/graphiql-rails-1.4.10/app/assets/javascripts
+  /box/gems/graphiql-rails-1.4.10/app/assets/stylesheets
+  /box/gems/material_icons-2.2.1/app/assets/fonts
+  /box/gems/material_icons-2.2.1/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/foundation_emails-2.2.1.0/vendor/assets/stylesheets
+  /box/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /box/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /box/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/images):
+    4:     <title>Inteliware</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= favicon_link_tag %>
+   10:   </head>
+  
+app/assets/javascripts/cable.js:4
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2382190314601243493_51517180'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.5ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (78.4ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (244.2ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (241.1ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (263.3ms)
+Started GET "/graphiql" for 172.20.0.1 at 2018-05-03 21:55:33 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GraphiQL::Rails::EditorsController#show as HTML
+  Parameters: {"graphql_path"=>"/graphql"}
+  Rendering /box/gems/graphiql-rails-1.4.10/app/views/graphiql/rails/editors/show.html.erb
+  Rendered /box/gems/graphiql-rails-1.4.10/app/views/graphiql/rails/editors/show.html.erb (380.3ms)
+Completed 500 Internal Server Error in 501ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'action_cable' with type 'application/javascript'
+Checked in these paths: 
+  /ConnectGitHub/app/assets/config
+  /ConnectGitHub/app/assets/images
+  /ConnectGitHub/app/assets/javascripts
+  /ConnectGitHub/app/assets/stylesheets
+  /ConnectGitHub/vendor/assets/javascripts
+  /ConnectGitHub/vendor/assets/stylesheets
+  /box/gems/graphiql-rails-1.4.10/app/assets/javascripts
+  /box/gems/graphiql-rails-1.4.10/app/assets/stylesheets
+  /box/gems/material_icons-2.2.1/app/assets/fonts
+  /box/gems/material_icons-2.2.1/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/foundation_emails-2.2.1.0/vendor/assets/stylesheets
+  /box/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /box/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /box/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /box/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /box/gems/materialize-sass-0.100.2/app/assets/fonts
+  /box/gems/materialize-sass-0.100.2/app/assets/images):
+    2: <html>
+    3:   <head>
+    4:     <title>GraphiQL</title>
+    5:     <%= stylesheet_link_tag("graphiql/rails/application") %>
+    6:     <%= javascript_include_tag("graphiql/rails/application") %>
+    7:   </head>
+    8:   <body>
+  
+app/assets/javascripts/cable.js:4
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.2ms)
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:57:44 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (6.8ms)
+  Rendered shared/_footer.html (0.5ms)
+Completed 200 OK in 1200ms (Views: 1183.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/favicon.ico" for 172.20.0.1 at 2018-05-03 21:57:46 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (44.8ms)
+  Rendered collection of /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (0.7ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (49.4ms)
+  Rendering /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /box/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.1ms)
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-05-03 21:57:52 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (110.3ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html (0.6ms)
+Completed 200 OK in 417ms (Views: 329.5ms | ActiveRecord: 64.5ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-05-03 21:57:55 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.1ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html (0.5ms)
+Completed 200 OK in 216ms (Views: 202.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-05-03 21:57:58 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github" for 172.20.0.1 at 2018-05-03 21:57:58 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/auth/github/callback?code=ffee678c856eef4fafeb&state=46c142613d582feafac6c1a0665f3629d714c25f9382def7" for 172.20.0.1 at 2018-05-03 21:57:59 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"ffee678c856eef4fafeb", "state"=>"46c142613d582feafac6c1a0665f3629d714c25f9382def7"}
+  [1m[36mUser Load (31.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 ORDER BY "users"."id" ASC LIMIT $3[0m  [["provider", "github"], ["uid", "11342308"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sergioh.c@live.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 342ms (ActiveRecord: 33.0ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:58:03 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (6.8ms)
+  Rendered shared/_footer.html (0.4ms)
+Completed 200 OK in 245ms (Views: 240.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/sign_up" for 172.20.0.1 at 2018-05-03 21:58:43 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html (0.7ms)
+Completed 200 OK in 237ms (Views: 235.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2018-05-03 21:58:45 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html (0.5ms)
+Completed 200 OK in 180ms (Views: 176.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.20.0.1 at 2018-05-03 21:58:47 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html (0.4ms)
+Completed 200 OK in 174ms (Views: 171.7ms | ActiveRecord: 0.0ms)
+
+
