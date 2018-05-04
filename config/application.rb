@@ -1,6 +1,6 @@
 require_relative "boot"
 
-require "rails"
+require "rails/all"
 require "graphql/client"
 require "graphql/client/http"
 require "active_record/railtie"
@@ -32,7 +32,7 @@ module ConnectGitHub
   # However, it's smart to dump this to a JSON file and load from disk
   #
   # Run it from a script or rake task
-  # GraphQL::Client.dump_schema(SWAPI::HTTP, "db/schema.json")
+  #GraphQL::Client.dump_schema(ConnectGitHub::HTTP, "db/schema.json")
   #
   # Schema = GraphQL::Client.load_schema("path/to/schema.json")
 
