@@ -3,7 +3,7 @@ class RepositoriesController < ApplicationController
   #
   # All queries MUST be assigned to constants and therefore be statically
   # defined. Queries MUST NOT be generated at request time.
-  IndexQuery = GitHub::Client.parse <<-'GRAPHQL'
+  IndexQuery = ConnectGitHub::Client.parse <<-'GRAPHQL'
     # All read requests are defined in a "query" operation
     query {
       # viewer is the currently authenticated User
@@ -37,7 +37,7 @@ class RepositoriesController < ApplicationController
 
 
   # Define query for "Show more repositories..." AJAX action.
-  MoreQuery = GitHub::Client.parse <<-'GRAPHQL'
+  MoreQuery = ConnectGitHub::Client.parse <<-'GRAPHQL'
     # This query uses variables to accept an "after" param to load the next
     # 10 repositories.
     query($after: String!) {
@@ -65,7 +65,7 @@ class RepositoriesController < ApplicationController
 
 
   # Define query for repository show page.
-  ShowQuery = GitHub::Client.parse <<-'GRAPHQL'
+  ShowQuery = ConnectGitHub::Client.parse <<-'GRAPHQL'
     # Query is parameterized by a $id variable.
     query($id: ID!) {
       # Use global id Node lookup
