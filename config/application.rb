@@ -9,7 +9,7 @@ require "action_cable/engine"
 Bundler.require(*Rails.groups)
 
 # Star Wars API example wrapper
-module GitHub
+module ConnectGitHub
   class Application < Rails::Application
   end
   # Configure GraphQL endpoint using the basic HTTP network adapter.
